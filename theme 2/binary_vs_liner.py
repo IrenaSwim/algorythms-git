@@ -39,37 +39,36 @@ def binary_search(arr, target):
     else:
         return f'Индекс: {mid}'
     
-# list100 = [random.randint(1,1000) for _ in range(100)]
-# print(list100)
+list100 = [random.randint(1,1000) for _ in range(100)]
+print(list100)
 
-# target = int(input('Введите число для поиска: '))
+target = int(input('Введите число для поиска: '))
 
-# print(liner_search(list100, target))
-# print()
-# print(binary_search(list100, target))
+print(liner_search(list100, target))
+print()
+print(binary_search(list100, target))
 #алгоритм бинарного поиска сработал в 2 раза быстрее.
 
+#собираем данные для графиков
 list10 = [x for x in range(1,21) if x % 2 == 0]
 biglist = [x for x in range(1,5000) if x % 3 == 0]
 hugelist = [x for x in range(1,20000) if x % 2 != 0]
-print(len(biglist))
-print(len(hugelist))
 
 target1 = 18
 target2 = 4665
 target3 = 13231
 
-# print(liner_search(list10, target1))
-# print()
-# print(liner_search(biglist, target2))
-# print()
-# print(liner_search(hugelist, target3))
-# print()
-# print(binary_search(list10, target1))
-# print()
-# print(binary_search(biglist, target2))
-# print()
-# print(binary_search(hugelist, target3))
-# print()
+print(liner_search(list10, target1))
+print()
+print(liner_search(biglist, target2))
+print()
+print(liner_search(hugelist, target3))
+print()
+print(binary_search(list10, target1))
+print()
+print(binary_search(biglist, target2))
+print()
+print(binary_search(hugelist, target3))
+print()
 
 
