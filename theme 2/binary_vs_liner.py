@@ -48,7 +48,7 @@ print(liner_search(list100, target))
 print()
 print(binary_search(list100, target))
 #алгоритм бинарного поиска сработал в 2 раза быстрее.
-
+print()
 #собираем данные для графиков
 list10 = [x for x in range(1,21) if x % 2 == 0]
 biglist = [x for x in range(1,5000) if x % 3 == 0]
