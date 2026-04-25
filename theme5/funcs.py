@@ -66,17 +66,4 @@ def quick_sort(arr):
 list10 = [random.randint(1,100) for _ in range(10)]
 print(list10)
 print()        
-print(quick_sort(list10)) 
-
-def insertion_sort(arr):
-    for ind in range(1, len(arr)):
-        key = arr[ind]
-        j = ind - 1
-        while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
-    return arr    
-            
-#print(insertion_sort(list20))           
-    
+print(quick_sort(list10))           
