@@ -34,7 +34,8 @@ def quick_sort(arr):
                 mid.append(item) 
                 
         return quick_sort(left) + mid + quick_sort(right)
-    
+
+@timing_decorator    
 def insertion_sort(arr):
     for ind in range(1, len(arr)):
         key = arr[ind]
@@ -43,4 +44,26 @@ def insertion_sort(arr):
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
-    return arr        
+    return arr  
+
+list20 = [random.randint(1,50) for _ in range(20)]     
+list100 = [random.randint(1,1000) for _ in range(100)]     
+list1000 = [random.randint(1,10000) for _ in range(1000)]   
+
+start_time = time.time()
+quick_sort(list20)
+end_time = time.time()
+print(f'Функция quick_sort выполнена за {(end_time - start_time):.6f}')
+start_time = time.time()
+quick_sort(list100)
+end_time = time.time()
+print(f'Функция quick_sort выполнена за {(end_time - start_time):.6f}')
+start_time = time.time()
+quick_sort(list1000)
+end_time = time.time()
+print(f'Функция quick_sort выполнена за {(end_time - start_time):.6f}')
+print()
+insertion_sort(list20)
+insertion_sort(list100)
+insertion_sort(list1000)
+
