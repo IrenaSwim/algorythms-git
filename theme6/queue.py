@@ -43,7 +43,7 @@ while True:
     current_doc = q1.dequeue()
     print(f'Печатается файл {current_doc}')
     time.sleep(random.uniform(1, 2))
-    print(f'Печать завершена в {datetime.now().strftime("%H:%M%:%S")}')
+    print(f'Печать завершена в {datetime.now().strftime('%H-:%M-:%S')}')#сделала такой строковый формат, чтобы работало на Windows (на Linux как обычно %H:%M:%S)
     if q1.is_empty():
         break
 print()
