@@ -14,10 +14,6 @@ class BinaryTree:
         self.root = None
 
     def insert(self, key):
-        # if self.root is None:
-        #     self.root = Node(key)
-        # else:
-        #     return self._insert(self.root, key)
        self.root = self._insert(self.root, key)
     
     def _insert(self, node, key):
