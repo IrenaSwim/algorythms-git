@@ -1,5 +1,4 @@
 import numpy as np
-from collections import defaultdict
 
 def adj_matrix_graph(vertex_num, edges, indirected=False):
     matrix = [[0] * vertex_num for _ in range(vertex_num)]
@@ -10,8 +9,7 @@ def adj_matrix_graph(vertex_num, edges, indirected=False):
             matrix[u][v] = 1
             
     return matrix    
-    
-       
+          
 def insert_vertex(graph):
     graph.append([0]*len(graph))
     for row in graph:
@@ -26,7 +24,6 @@ def insert_edage(graph, edge, indirected=False):
     
     return graph  
         
-
 edges2 = [(0, 2), (2, 3), (3, 1)]
 m_graph = adj_matrix_graph(4, edges2)  
 insert_vertex(m_graph)
